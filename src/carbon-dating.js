@@ -25,7 +25,6 @@ function dateSample(sampleActivity) {
   if (activity <= 0 || activity >= MODERN_ACTIVITY) {
     return false;
   }
-
   const decay = 0.693 / HALF_LIFE_PERIOD;
   const age = Math.ceil(Math.log(MODERN_ACTIVITY / activity) / decay);
 
